@@ -1,6 +1,0 @@
-=========13-06-2017=======
-- Thêm danh mục bất động sản trong backend
-- Sửa admin bất động sản
-- Sửa lọc dữ liệu ở trang chủ
-- Xóa hết dữ liệu bất động sản
-- Vừa đăng vừa test

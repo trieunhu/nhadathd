@@ -1,1 +1,0 @@
-<?= \frontend\modules\home\components\data\GetImageWidgets::widget(['image'=>$image]) ?>
