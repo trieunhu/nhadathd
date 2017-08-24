@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Đô thị</title>
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/rd-navbar.css">
+	<!-- javascript -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/rd-navbar.js"></script>
+    <script src="js/function.js"></script>
+</head>
+<body>
+	<header id="header" class="header hidden-phone">
+		<!-- Top-menu -->
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<ul class="pull-right">
+							<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng ký</a></li>
+							<li><a href="#"><i class="fa fa-user"></i> Đăng nhập</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- /Top-menu -->
+		<!-- Logo va banner -->
+		<div class="logo_banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="logo"><a href="#"><img src="images/logo.png" alt="Đô thị" class="img-responsive" /></a></div>
+					</div>
+					<div class="col-sm-9">
+						<div class="banner pull-right">
+							<a href="#" target="_blank"><img src="images/banner.gif" alt="banner" class="img-responsive" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /Logo va banner -->
+
+		<!-- Menu chinh -->
+		<nav class="navbar navbar-default" role="navigation" id="stickymenu" >
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+				
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav" id="main-menu">
+								<li class="active"><a href="index.html">Trang chủ</a></li>
+								<li><a href="batdongsan.html">BĐS bán</a>
+									<ul>
+										<li><a href="#">Bán căn hộ chung cư</a></li>
+										<li><a href="#">Tất cả các loại nhà bán</a>
+											<ul>
+												<li><a href="#">Nhà bán riêng</a></li>
+												<li><a href="#">Nhà biệt thự</a></li>
+												<li><a href="#">Nhà liền kề</a></li>
+											</ul>
+										</li>
+										
+									</ul>
+								</li>
+								<li><a href="batdongsan.html">BĐS cho thuê</a>
+									<ul>
+										<li><a href="#">Bán căn hộ chung cư</a></li>
+										<li><a href="#">Tất cả các loại nhà bán</a>
+											<ul>
+												<li><a href="#">Nhà bán riêng</a></li>
+												<li><a href="#">Nhà biệt thự</a></li>
+												<li><a href="#">Nhà liền kề</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Bán căn hộ chung cư</a></li>
+									</ul>
+								</li>
+								<li><a href="tintuc.html">Tin tức</a></li>
+								<li><a href="#">Thiết kế kiến trúc</a></li>
+								<li><a href="#">Không gian sống</a></li>
+								<li><a href="#">Phong thủy</a></li>
+								<li><a href="#">Tư vấn luật</a></li>
+								<li><a href="#">Dự án</a></li>
+								<li><a href="#">Rao vặt</a></li>
+								<li><a href="#">Đăng tin</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- /Menu chinh -->
+	</header><!-- /header -->
+
+	<!-- Hop tim kiem chinh tren trang chu -->
+	<section class="main_search">
+		<div class="container">
+				<div role="tabpanel">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#bds_ban" aria-controls="bds_ban" role="tab" data-toggle="tab">Bất động sản bản</a>
+						</li>
+						<li role="presentation">
+							<a href="#bds_t" aria-controls="bds_t" role="tab" data-toggle="tab">Bất động sản cho thuê</a>
+						</li>
+					</ul>
+				
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="bds_ban">
+							<form action="" method="get" accept-charset="utf-8">
+								<div class="row">
+									<div class="col-xs-12">
+										<input type="text" name="diadiem" value="" placeholder="Nhập địa điểm, vd: The Manor">
+									</div>	
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<ul>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Loại bất động sản</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Tỉnh/ thành Phố</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Diện tích</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Mức giá</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Phường xã</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Loại bất động sản</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Đường phố</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Số phòng ngủ</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Hướng nhà</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Dự án</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li><input type="submit" name="timkiem" value="Tìm kiếm"></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="bds_t">
+							<form action="" method="get" accept-charset="utf-8">
+								<div class="row">
+									<div class="col-xs-12">
+										<input type="text" name="diadiem" value="" placeholder="Nhập địa điểm, vd: The Manor">
+									</div>	
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<ul>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Loại bất động sản</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Tỉnh/ thành Phố</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Diện tích</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Mức giá</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Phường xã</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Loại bất động sản</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Đường phố</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Số phòng ngủ</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Hướng nhà</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li>
+												<select name="loai" id="loai">
+													<option value="">Dự án</option>
+													<option value="">Loại bán căn hộ chung cư</option>
+													<option value="">Tất cả các nhà loại bán</option>
+												</select>
+											</li>
+											<li><input type="submit" name="timkiem" value="Tìm kiếm"></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div><!-- /tab -->
+		</div><!-- /container -->
+	</section><!-- /Hop tim kiem chinh tren trang chu -->
+
+	<content>
+		<div class="container" id="noidung">
+			<!-- Chuyen muc tin noi bat va xem nhieu -->
+			<section id="feature">
+
+				<div class="row">
+					<!-- Tin noi bat -->
+					<div class="col-sm-8">
+						<div class="box-feature box-style1">
+							<div class="title"><h3>TIN NỔI BẬT</h3></div>
+							<div class="row">
+								<div class="col-sm-7">
+									<div class="box-feature-left">
+										<a href="#" class="img-feature"><img src="images/tinnoibat.jpg" alt="" class="img-responsive"></a>
+										<a href="#">Khó khăn chuyển nhượng một phần dự án</a>
+									</div>
+								</div>
+								<div class="col-sm-5">
+									<div class="box-feature-right">
+										<ul class="danhsach_tin">
+											<li><a href="#">Savills: Thị trường bán lẻ Hà Nội hoạt động ế ẩm</a></li>
+											<li><a href="#">Hà Nội: Sẽ có thêm 22.000 căn hộ mới</a></li>
+											<li><a href="#">Nhà đầu tư BĐS Anh tích cực rót tiền vào thị trường Dubai</a></li>
+											<li><a href="#">Tp.HCM: Di dời 1.210 hộ dân sống ven sông, ven biển bị sạt</a></li>
+											<li><a href="#">Giá thuê BĐS cao cấp trên toàn cầu giảm trung bình 0,5%</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- /Tin noi bat -->
+
+					<!-- Tin xem nhieu -->
+					<div class="col-sm-4">
+						<div class="box-style2" id="tin_xem_nhieu">
+							<div class="title"><h3>Tin xem nhiều</h3></div>
+							<ul class="danhsach_tin">
+								<li><a href="#">Bất động sản tiếp tục hấp dẫn nhà đầu tư ngoại trong 5-10 năm tới</a></li>
+								<li><a href="#">JLL Việt Nam: Giá căn hộ chung cư sẽ tăng khoảng 4% trong 6 tháng cuối năm</a></li>
+								<li><a href="#">Tp.HCM: Giá biệt thự, nhà phố đang tăng mạnh</a></li>
+								<li><a href="#">Tp.HCM: Khan hiếm nguồn cung căn hộ dịch vụ</a></li>
+								<li><a href="#">Tp.HCM: Thị trường bán lẻ những tháng cuối năm có sôi động trở lại?</a></li>
+							</ul>
+						</div>
+					</div><!-- /Tin xem nhieu -->
+				</div>
+			</section><!-- /Chuyen muc tin noi bat va xem nhieu -->
+
+			<main id="main-content">
+				<div class="row">
+
+					<!-- Noi dung chinh cot trai -->
+					<div class="col-sm-8">
+						<!-- Tin rao moi nhat -->
+						<section id="tin_rao_moi_nhat">
+							<div class="title"><h3>TIN RAO MỚI NHẤT</h3></div>
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao1.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao2.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao3.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao4.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao5.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao6.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao7.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao8.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao1.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao2.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+							<!-- Tin 1 -->
+							<div class= "box-style3">
+								<div class="row">								
+									<div class="col-sm-4">
+										<a class="img-feature"><div style="background-image:url('images/tinrao3.jpg')"></div></a>
+									</div>
+									<div class="col-sm-8">
+										<div class="info">
+											<a href="#"><h4>Bán đất biệt thự Nam An Khánh, 2 mặt đường, trục đường chính 42m. 35 triệu/m2</h4></a>
+											<table>
+												<tbody>
+													<tr>
+														<td><i class="fa fa-tags" aria-hidden="true"></i> Giá:</td>
+														<td style="color:#38A345; font-weight: bold">35 Triệu/m²</td>											
+													</tr>
+													<tr>
+														<td><i class="fa fa-area-chart" aria-hidden="true"></i> Diện tích</td>
+														<td>170 m²</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-map-marker" aria-hidden="true"></i> Vị trí:</td>											
+														<td>Hoài Đức - Hà Nội</td>
+													</tr>
+												</tbody>
+											</table>
+											<span>04/07/2016</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- /Tin 1 -->
+
+							<!-- phan trang cho tin rao moi nhat -->
+							<div class="page">
+								<div class="row">
+									<div class="col-md-6">
+										Tin Nhà đất bán mới nhất:
+										<span><a href="#">1</a></span>
+										<span><a href="#">2</a></span>
+										<span><a href="#">3</a></span>
+										<span><a href="#">4</a></span>
+										<span><a href="#">5</a></span>
+									</div>
+									<div class="col-md-6 pull-right text-right">
+										Tin Nhà đất cho thuê mới nhất:
+										<span><a href="#">1</a></span>
+										<span><a href="#">2</a></span>
+										<span><a href="#">3</a></span>
+										<span><a href="#">4</a></span>
+										<span><a href="#">5</a></span>
+									</div>
+								</div>
+							</div><!-- /phan trang cho tin rao moi nhat -->
+						</section><!-- /Tin rao moi nhat -->
+						
+						<!-- Phong thuy -->
+						<section class="box-style1" id="phong_thuy">
+							<div class="title"><h3>PHONG THỦY</h3></div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="box-feature-left">
+										<img src="images/tinnoibat.jpg" alt="" class="img-responsive">
+										<a href="#">Khó khăn chuyển nhượng một phần dự án</a>
+									</div>
+								</div>
+								<div class="col-sm-6" style="padding-left:0px">
+									<div class="box-feature-right">
+										<ul class="danhsach_tin">
+											<li><a href="#">Savills: Thị trường bán lẻ Hà Nội hoạt động ế ẩm</a></li>
+											<li><a href="#">Hà Nội: Sẽ có thêm 22.000 căn hộ mới</a></li>
+											<li><a href="#">Nhà đầu tư BĐS Anh tích cực rót tiền vào thị trường Dubai</a></li>
+											<li><a href="#">Tp.HCM: Di dời 1.210 hộ dân sống ven sông, ven biển bị sạt</a></li>
+											<li><a href="#">Giá thuê BĐS cao cấp trên toàn cầu giảm trung bình 0,5%</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section><!-- /Phong thuy -->
+						
+						<!-- Khong gian song -->
+						<section class="box-style1" id="khong_gian_song">
+							<div class="title"><h3>KHÔNG GIAN SỐNG</h3></div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="box-feature-left">
+										<a href="#" class="img-feature"><img src="images/khonggiansong.jpg" alt="" class="img-responsive"></a>
+										<a href="#">Khó khăn chuyển nhượng một phần dự án</a>
+									</div>
+								</div>
+								<div class="col-sm-6" style="padding-left:0px">
+									<div class="box-feature-right">
+										<ul class="danhsach_tin">
+											<li><a href="#">Savills: Thị trường bán lẻ Hà Nội hoạt động ế ẩm</a></li>
+											<li><a href="#">Hà Nội: Sẽ có thêm 22.000 căn hộ mới</a></li>
+											<li><a href="#">Nhà đầu tư BĐS Anh tích cực rót tiền vào thị trường Dubai</a></li>
+											<li><a href="#">Tp.HCM: Di dời 1.210 hộ dân sống ven sông, ven biển bị sạt</a></li>
+											<li><a href="#">Giá thuê BĐS cao cấp trên toàn cầu giảm trung bình 0,5%</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section><!-- /Khong gian song -->
+						
+						<div class="row">
+							<div class="col-sm-6" style="padding-right:7px">
+								<div class="box-style4" id="tu_van_luat">
+									<div class="title"><h3>TƯ VẤN LUẬT</h3></div>
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="box-feature-left">
+												<a href="#" class="img-feature"><img src="images/tuvanluat.jpg" alt="" class="img-responsive"></a>
+												<a href="#">Khó khăn chuyển nhượng một phần dự án</a>
+											</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="box-feature-right">
+												<ul class="danhsach_tin">
+													<li><a href="#">Savills: Thị trường bán lẻ Hà Nội hoạt động ế ẩm</a></li>
+													<li><a href="#">Hà Nội: Sẽ có thêm 22.000 căn hộ mới</a></li>
+													<li><a href="#">Nhà đầu tư BĐS Anh tích cực rót tiền vào thị trường Dubai</a></li>
+													<li><a href="#">Tp.HCM: Di dời 1.210 hộ dân sống ven sông, ven biển bị sạt</a></li>
+													<li><a href="#">Giá thuê BĐS cao cấp trên toàn cầu giảm trung bình 0,5%</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6" style="padding-left:7px">
+								<div class="box-style4" id="thiet_ke_kien_truc">
+									<div class="title"><h3>THIẾT KẾ KIẾN TRÚC</h3></div>
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="box-feature-left">
+												<a href="#" class="img-feature"><img src="images/thietkekientruc.jpg" alt="" class="img-responsive"></a>
+												<a href="#">Khó khăn chuyển nhượng một phần dự án</a>
+											</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="box-feature-right">
+												<ul class="danhsach_tin">
+													<li><a href="#">Savills: Thị trường bán lẻ Hà Nội hoạt động ế ẩm</a></li>
+													<li><a href="#">Hà Nội: Sẽ có thêm 22.000 căn hộ mới</a></li>
+													<li><a href="#">Nhà đầu tư BĐS Anh tích cực rót tiền vào thị trường Dubai</a></li>
+													<li><a href="#">Tp.HCM: Di dời 1.210 hộ dân sống ven sông, ven biển bị sạt</a></li>
+													<li><a href="#">Giá thuê BĐS cao cấp trên toàn cầu giảm trung bình 0,5%</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- /Noi dung chinh cot phai -->
+
+					<!-- Noi dung chinh cot trai -->
+					<div class="col-sm-4" id="right-content">
+						<section id="right-slider">
+							<!-- slide -->
+							<div class="title"><h3>DỰ ÁN NỔI BẬT</h3></div>
+							<div id="duan" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#duan" data-slide-to="0" class=""></li>
+									<li data-target="#duan" data-slide-to="1" class=""></li>
+									<li data-target="#duan" data-slide-to="2" class="active"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="item">
+										<img src="images/duan1.jpg" alt="">
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>Example headline.</h1>
+												<p>Note: If you're viewing this page via a not load/display properly due to web browser security rules.</p>
+												<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<img src="images/duan2.jpg" alt="">
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>Another example headline.</h1>
+												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+												<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="item active">
+										<img src="images/duan3.jpg" alt="">
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>One more for good measure.</h1>
+												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+												<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a class="left carousel-control" href="#duan" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+								<a class="right carousel-control" href="#duan" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+							</div><!-- /slide -->
+							<div class="row">
+								<div class="col-xs-12">
+									<ul>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature"><div style="background-image:url('images/tinrao1.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature"><div style="background-image:url('images/tinrao5.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature"><div style="background-image:url('images/tinrao2.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature"><div style="background-image:url('images/tinrao3.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature"><div style="background-image:url('images/tinrao4.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						
+						<a href="#" class="quangcao"><img src="images/quangcao.gif" alt="" class="img-responsive" width="300" height="250"></a>
+
+						<!-- Link lien ket -->
+						<section id="lien_ket_noi_bat">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="title"><h3>LIÊN KẾT NỔI BẬT</h3></div>
+								</div>
+								<div class="col-xs-12">
+									<ul id="ulBoxHotHome" class="danhsach_tin">
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-phu-nhuan.htm">Bán đất nền Quận Phú Nhuận</a></h3>
+							            </li>
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-quan-9.htm">Bán đất nền Quận 9</a></h3>
+							            </li>
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-phuong-an-phu-dong-1.htm">Bán đất nền phường An Phú Đông </a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-phu-quoc-kg.htm">Bán Đất nền Phú Quốc</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-can-ho-chung-cu-jamona-city.htm">Bán chung cư Jamona Apartment </a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-binh-duong.htm">Bán đất nền Bình Dương</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-can-ho-chung-cu-bac-tu-liem.htm">Bán chung cư Quận Bắc Từ Liêm</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-ben-cat-bd.htm">Bán đất nền Huyện Bến Cát</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-nha-biet-thu-lien-ke-phuong-phu-huu-2.htm">Bán liền kề phường Phú Hữu</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-quan-2.htm">Bán đất nền Quận 2 </a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-can-ho-chung-cu-binh-tan.htm">Bán chung cư quận Bình Tân</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-di-an-bd.htm">Bán đất nền Huyện Dĩ An</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-can-ho-chung-cu-ha-dong.htm">Bán chung cư Quận Hà Đông</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-can-ho-chung-cu-quan-7.htm">Bán chung cư quận 7</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-quan-12.htm">Bán đất nền Quận 12</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-thu-duc.htm">Bán đất nền Quận Thủ Đức</a></h3>
+							            </li>
+
+							            <li>
+							                <h3><a href="/ban-can-ho-chung-cu-nam-tu-liem.htm">Bán chung cư Quận Nam Từ Liêm</a></h3>
+							            </li>
+							            <li>
+							                <h3><a href="/ban-dat-nen-du-an-tan-uyen-bd.htm">Bán đất nền Huyện Tân Uyên</a></h3>
+							            </li>
+							        </ul>
+							        <a href="#" class="btn btn-success pull-right">Xem tất cả</a>
+								</div>
+							</div>							
+						</section><!-- /Link lien ket -->
+						
+						<!-- Tinh nang ho tro-->
+						<section id="tinh_nang_ho_tro">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="title"><h3>Tính năng hỗ trợ</h3></div>
+								</div>
+								<div class="col-xs-12">
+									<ul>
+							            <li class="email"><a href="#">Nhận bđs qua email</a></li>
+							            <li class="lifengshui"><a href="#">Xem phong thủy theo tuổi</a></li>
+							            <li class="laixuat"><a href="#">Tính lãi suất vay ngân hàng</a></li>       
+							            <li class="vanban "><a href="#">Văn bản ngành xây dựng</a></li>
+							        </ul>
+								</div>
+							</div>
+						</section><!-- /Tinh nang ho tro-->
+						
+						<!-- Web mua ban -->
+						<section id="web_mua_ban">
+						<div class="title"><h3>WEBMUABAN.COM</h3></div>
+							<div class="row">
+								<div class="col-xs-12">
+									<ul>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature" href="#"><div style="background-image:url('images/duan_bottom1.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature" href="#"><div style="background-image:url('images/duan_bottom2.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature" href="#"><div style="background-image:url('images/duan_bottom3.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature" href="#"><div style="background-image:url('images/duan_bottom1.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+										<li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature" href="#"><div style="background-image:url('images/duan_bottom2.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature" href="#"><div style="background-image:url('images/duan_bottom3.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+										</li>
+											<div class= "box-style3">
+												<div class="row">								
+													<div class="col-md-5 col-xs-5">
+														<a class="img-feature" href="#"><div style="background-image:url('images/duan_bottom1.jpg')"></div></a>
+													</div>
+													<div class="col-md-7 col-xs-7">
+														<div class="info">
+															<a href="#"><h4>Eco City Việt Hưng</h4></a>
+															<p>Lô CT-21B - Khu đô thị mới Việt Hưng, phường Giang Biên, quận Long Biên, TP. Hà Nội</p>
+														</div>
+													</div>
+												</div>
+											</div><!-- /Tin 1 -->
+										</li>
+									</ul>
+									<a href="#" class="btn btn-success pull-right">Xem tất cả</a>
+								</div>
+								
+							</div>
+						</section><!-- /Web mua ban -->
+
+					</div><!-- /Noi dung chinh cot phai -->
+				</div>
+			</main>
+		</div>
+	</content>
+
+	<footer>
+		
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">				
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-ex1-collapse">
+								<ul class="nav navbar-nav">
+									<li><a href="#">Giới thiệu</a></li>
+									<li><a href="#">Hướng dẫn</a></li>
+									<li><a href="#">Quy định</a></li>
+									<li><a href="#">Liên hệ</a></li>
+									<li><a href="#">Điều khoản thỏa thuận</a></li>
+									<li><a href="#">Báo giá</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="#" class="logo_footer"><img src="images/logo.png" alt="do thi" class="img-responsive"></a>
+				</div>
+				<div class="col-sm-5">
+					<div class="info_footer">
+		                <p>Giấy phép hoạt động trang tin điện tử ICP số 23/GP-TTĐT.</p>
+		                <p>Copyright © 2010 - 2015 Dothi.net. ® </p>
+		                <p>
+		                    Ghi rõ nguồn "Dothi.net" khi phát hành lại thông tin từ website này.
+		                </p>
+		                <p class="info_ct">
+		                    <span>Hotline:  0903 236 862 - 0969 980 365 </span>
+		                    </p><div class="clear"></div>
+		                <p></p>
+		                <p>
+		                    <span class="colr">Thứ 2 đến thứ 6: <strong>8h00 - 17h15</strong> | Thứ 7: <strong>8h00 - 12h00</strong></span>
+		                </p>
+		                <div class="clear"></div>
+		                <p class="info_ct">
+		                    <a style="border: none; margin: 0; padding: 0" rel="nofollow" href="mailto:cskh@info@dothi.net?Subject=Liên hệ-info@dothi.net" target="_top">Email: info@dothi.net</a>
+		                    <a href="skype:cskh.dothinet?chat" rel="nofollow">Skype: cskh.dothinet</a>
+		                    <a href="ymsgr:sendim?cskh.dothinet" rel="nofollow">Yahoo: cskh.dothinet</a>
+		                </p>
+		                <p class="info_ct">
+		                    <span>Địa chỉ: 144 Quan Nhân - Nhân Chính -Thanh Xuân - Hà Nội.</span>
+		                </p>
+		            </div>
+				</div>
+				<div class="col-sm-4">
+					<div class="app_footer">
+		                <p>Tải ứng dụng di động</p>
+		                <p>
+		                    <a class="mr10" target="_blank" href="#">
+		                        <img src="images/app-android-dl.png" class="img-responsive">
+		                    </a>
+		                    <a href="#" rel="nofollow" target="_blank">
+		                        <img src="images/app-ios-dl.png" class="img-responsive">
+		                    </a>
+		                </p>
+		            </div>
+				</div>
+			</div>
+		</div>
+	</footer>	
+</body>
+</html>
